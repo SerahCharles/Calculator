@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #fafafa;
+    --calculator-background: #141010;
+    --button-background: transparent;
+    --button-text-color: white;
+    --button-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    --equal-button-color: #f2910a;
+    --operator-button-color: #4ef037;
+    --display-font-size: 45px;
+    --display-width: 300px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background:#fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.calculator{
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    padding: 44px;
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow:-8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+form.display{
+    display: flex;
+    margin: 20px 0;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+form.display input {
+    text-align: right;
+    flex: 1;
+    font-size: var(--display-font-size);
+    box-shadow: none;
+    width: var(--display-width);
+}
+
+
+form input.equal{
+    width: 145px;
+    background-color: #0092ca;
+}
+
+form input.operator{
+    color:  #4ef037;
+}
+
+.dark-theme {
+    background-color: #222831;
+}
+
+form input.dark-theme{
+    color: #222831;
+}
+
+.light-theme {
+    background-color: #fffdfb;
+}
+
+form input.light-theme{
+        color: #ffe700;
+}
+
+.theme-switch {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.theme-switch button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+}
+
+.dark-theme {
+    background-color: #222831;
+    color: #000000;
+}
+
+.light-theme {
+    background-color:#f09027 ;
+    
+}
